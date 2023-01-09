@@ -1,1 +1,25 @@
+MongoDB: insert_one() 
+fred = {
+ “first_name”: “Fred”
+}
+ 
+fred_student_id = students.insert_one(fred).inserted_id 1007
+ 
+print(fred_student_id)
+
+susie = {
+ “first_name”: “susie”
+}
+ 
+susie_student_id = students.insert_one(susie).inserted_id 1008
+ 
+print(susie_student_id)
+
+bob = {
+ “first_name”: “bob”
+}
+ 
+bob_student_id = students.insert_one(bob).inserted_id 1009
+ 
+print(bob_student_id)
 
