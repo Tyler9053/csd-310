@@ -1,0 +1,22 @@
+Config= {
+	“user”: “pysports_user”,
+	“password”: :”thethe”,
+	“host”: “127.0.0.1”,
+	“database”: “pysports”,
+	“raise_on_warnings”; Trie
+}
+
+Try;
+	Db = mysql.connector.connect(**config0
+	Print(“ database user {} connected to MySQL on host {} with database {} “ .format(config(“suer}, config{“host”}, config {“database”}}}
+	Input { “Press any key to continue…”}
+
+Except mysql.connector.Error as err:
+	If err.errno == errocode.ER_ACCESS_DENIED_ERROR:
+		Print (“ The supplied username or password are invald”)
+	Elif err.errno == errorcode.ER_BAD_DB_ERROR:
+		Print (“ The specified database does not exist”}
+	Else:
+	Print (err)
+Finally:
+	db.close()
